@@ -22,3 +22,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+/spAng-web/src/main/spAng-web/node_modules/
+/spAng-web/src/main/spAng-web/node/
+/.mvn/
+/.idea/
