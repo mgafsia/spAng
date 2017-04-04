@@ -7,5 +7,4 @@ import {HikeListComponent} from "./hike-list.compenent";
   imports : [BrowserModule],
 })
 export class HikeModule {
-  firstString = 'First message';
 }
