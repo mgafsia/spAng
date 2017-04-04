@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {HikeListComponent} from "../hike/hike-list.compenent";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '*';
+  title  : string;
+  private _hikeListComponent : HikeListComponent;
+
+  constructor() {
+    this.title = 'TitleInConstructor';
+    this._hikeListComponent = new HikeListComponent;
+  }
 }

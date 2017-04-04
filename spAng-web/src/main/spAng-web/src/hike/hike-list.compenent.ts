@@ -4,8 +4,7 @@ import {Component} from "@angular/core";
   selector: 'mga-hike-list',
   templateUrl: 'hike-list.component.html'
 })
+
 export class HikeListComponent {
-  //firstString : string;
-  //firstString = 'Bism elleh !';
-  hikeTitle = '*';
+  public hikeListComponentTitle : string = 'Bism elleh';
 }

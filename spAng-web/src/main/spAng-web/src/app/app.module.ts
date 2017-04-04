@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HikeModule } from "../hike/hike.module";
+import {HikeListComponent} from "../hike/hike-list.compenent";
 
 @NgModule({
   declarations: [
@@ -19,4 +20,7 @@ import { HikeModule } from "../hike/hike.module";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+   appModuleVar = 'just for test';
+
+}
