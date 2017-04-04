@@ -1,11 +1,10 @@
 import {NgModule} from "@angular/core";
-import {HikeComponent} from "./hike.component";
 import {BrowserModule} from "@angular/platform-browser";
+import {HikeListComponent} from "./hike-list.compenent";
 
 @NgModule({
-  declarations : [HikeComponent],
+  declarations : [HikeListComponent],
   imports : [BrowserModule],
-  bootstrap : [HikeModule]
 })
 export class HikeModule {
   firstString = 'First message';
