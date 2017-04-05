@@ -20,6 +20,9 @@ public class SpAngApplication {
 	}
 	//TODO(MGA) : add a mongoDB database
 	//TODO(MGA) : use swagger
+	//TODO(MGA) : add spring bean !!
+	//TODO(MGA) : add elastic search
+	//TODO(MGA) : add more hibernate
 
 	@Bean
 	public Docket newsApi() {
