@@ -6,6 +6,4 @@ import {Component} from "@angular/core";
 })
 
 export class HikeListComponent {
-  public hikeListComponentTitle : string = 'Hike Component Title';
-  public static aStaticVarInHikeListComponent : string = 'a static var';
 }
