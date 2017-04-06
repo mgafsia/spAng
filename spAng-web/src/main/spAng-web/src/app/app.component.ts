@@ -17,5 +17,6 @@ export class AppComponent {
   ngOnInit() {
     this.hikes = this._hikeService.getHikes();
     console.log(this.hikes);
+    //TODO(MGA) : check the video. ngFor in ?
   }
 }

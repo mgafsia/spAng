@@ -1,4 +1,5 @@
 import {Component} from "@angular/core";
+import {Hike} from "./Hike";
 
 @Component({
   selector: 'mga-hike-list',
@@ -6,5 +7,5 @@ import {Component} from "@angular/core";
 })
 
 export class HikeListComponent {
-  //TODO(MGA) : have not use this ?
+  hikes : Hike[];
 }

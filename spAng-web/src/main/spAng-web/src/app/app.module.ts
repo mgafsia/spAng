@@ -22,6 +22,4 @@ import {HikeService} from "../hike/hike.service";
   bootstrap: [AppComponent]
 })
 export class AppModule {
-
-
 }
