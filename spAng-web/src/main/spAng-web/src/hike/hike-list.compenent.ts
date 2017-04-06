@@ -6,4 +6,5 @@ import {Component} from "@angular/core";
 })
 
 export class HikeListComponent {
+  //TODO(MGA) : have not use this ?
 }

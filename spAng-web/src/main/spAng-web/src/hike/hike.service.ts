@@ -4,16 +4,8 @@ import {Hike} from "./Hike";
 
 @Injectable()
 export class HikeService {
-  hikes : Hike[] = [{
-                  name:"hikeOne",
-                  length: 1,
-                  evaluation: [2, 3]
-                   },
-                  {
-                    name:"hikeTwo",
-                    length: 3.5,
-                    evaluation: [8, 7]
-                  }];
+  hikes : Hike[] = [{ name:"hikeOne", description: "The first hike",  length: 1,   evaluation: [2, 3]},
+                    { name:"hikeTwo", description: "The second hike",  length: 6,   evaluation: [9, 7, 9]}];
 
   public getHikes() {
     return this.hikes;

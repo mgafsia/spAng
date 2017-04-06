@@ -1,6 +1,10 @@
 <h1>
   {{title}}
-</h1>
+ </h1>
 
 
-
+<ul>
+  <li *ngFor='let hike of hikes'>
+        <p>{{hike.name}} - {{hike.description}}
+  </li>
+</ul>

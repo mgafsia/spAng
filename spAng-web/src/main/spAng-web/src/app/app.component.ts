@@ -8,7 +8,7 @@ import {Hike} from "../hike/Hike";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title : string = "-";
+  title : string = "*";
   hikes  : Hike[];
 
   constructor(private _hikeService: HikeService) {
@@ -18,5 +18,4 @@ export class AppComponent {
     this.hikes = this._hikeService.getHikes();
     console.log(this.hikes);
   }
-
 }
