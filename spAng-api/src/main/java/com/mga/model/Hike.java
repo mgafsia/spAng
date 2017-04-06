@@ -1,7 +1,4 @@
-package com.mga.hike;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
-import io.swagger.annotations.ApiModelProperty;
+package com.mga.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

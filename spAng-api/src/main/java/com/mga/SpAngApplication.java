@@ -25,6 +25,13 @@ public class SpAngApplication {
 	//TODO(MGA) : add spring bean !!
 	//TODO(MGA) : add elastic search
 	//TODO(MGA) : add more hibernate
+    //TODO(MGA) : add test for nG
+    //TODO(MGA) : add spock tests
+    //TODO(MGA) : more spring Bean
+    //TODO(MGA) : CV(1) : Angular2/4 - GitHub - nodeJS ? - JQuery ? - Spring Boot - Spring Data Rest - test Ang - Spok
+    //TODO(MGA) : CV(2) : JAVA8 - MongoDB - elasticSearch - Cloud - Docker - Rancher - AMS - Jenkins - Swagger - TypeScript
+    //TODO(MGA) : CV(3) : SpringIoC
+    //TODO(MGA) : CV(6) : REST : model / Repository /
 
     @Bean
     public Docket swaggerSettings() {
