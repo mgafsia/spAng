@@ -22,9 +22,6 @@ import {HikeService} from "../hike/hike.service";
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  private _hikeService : HikeService;
 
-  constructor(_hikeService : HikeService) {
-    this._hikeService = _hikeService;
-  }
+
 }
