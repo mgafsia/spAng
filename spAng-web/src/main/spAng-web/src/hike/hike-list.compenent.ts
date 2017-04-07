@@ -3,6 +3,7 @@ import {Hike} from "./Hike";
 import {HikeService} from "./hike.service";
 
 @Component({
+  moduleId: module.id,
   selector: 'mga-hike-list',
   templateUrl: 'hike-list.component.html'
 })
