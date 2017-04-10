@@ -6,7 +6,7 @@ import "rxjs/add/operator/map";
 
 @Injectable()
 export class HikeService {
-  private url: string = 'src/api/hikes.json';
+  private url: string = '/api/hikes';
 
   constructor(private _http: Http) {
   }
