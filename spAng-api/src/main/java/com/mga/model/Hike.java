@@ -17,6 +17,8 @@ public class Hike {
     private Integer length;
     private String[] evaluation;
 
+    Person person;
+
     public Long getId() {
         return id;
     }
@@ -51,6 +53,14 @@ public class Hike {
 
     public void setEvaluation(String[] evaluation) {
         this.evaluation = evaluation;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
     }
 
     //TODO(MGA) : query : curl -X POST -H "Content-Type:application/json" -d '{ "name" : "ranOne", "length" : "1" }' localhost:8080/hikes
