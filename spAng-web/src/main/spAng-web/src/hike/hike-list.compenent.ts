@@ -8,13 +8,16 @@ import {HikeService} from "./hike.service";
   templateUrl: 'hike-list.component.html'
 })
 export class HikeListComponent {
-  hikes : Hike[];
+  hikes: Hike[];
+  errorMessage: string = "";
 
   constructor(private _hikeService: HikeService) {
   }
 
   ngOnInit() {
-    this.hikes = this._hikeService.getHikes();
+    this._hikeService.getHikesFormApi()
+      .subscribe(hikes => this.hikes = hikes,
+                 err => this.errorMessage = err);
   }
 }
 

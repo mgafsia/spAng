@@ -9,14 +9,8 @@ import {HikeListComponent} from "../hike/hike-list.compenent";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = "-";
-  hikes: Hike[];
 
-  constructor(private _hikeService: HikeService) {
+  constructor() {
   }
 
-  ngOnInit() {
-    this.hikes = this._hikeService.getHikes();
-    console.log(this.hikes);
-  }
 }

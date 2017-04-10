@@ -1,13 +1,24 @@
 import {Injectable} from "@angular/core";
-import {Hike} from "./Hike";
+import {Http} from "@angular/http";
+import "rxjs/add/operator/do";
+import "rxjs/add/operator/map";
 
 
 @Injectable()
 export class HikeService {
-  hikes : Hike[] = [{ name:"hikeOne", description: "The first hike",  length: 1,   evaluation: [2, 3]},
-                    { name:"hikeTwo", description: "The second hike",  length: 6,   evaluation: [9, 7, 9]}];
+  private url: string = 'src/api/hikes.json';
 
-  public getHikes() {
-    return this.hikes;
+  constructor(private _http: Http) {
+  }
+
+  ngOnInit() {
+    this.getHikesFormApi();
+  }
+
+  public getHikesFormApi() {
+    return  this._http.get(this.url)
+                      .do( hike => console.log(hike))
+                      .map( hikes => hikes.json());
+
   }
 }
