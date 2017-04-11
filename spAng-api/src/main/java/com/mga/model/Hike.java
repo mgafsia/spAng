@@ -1,9 +1,12 @@
 package com.mga.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Hike {
@@ -17,6 +20,8 @@ public class Hike {
     private Integer length;
     private String[] evaluation;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id")
     Person person;
 
     public Long getId() {
