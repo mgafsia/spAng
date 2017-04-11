@@ -25,6 +25,7 @@ public class SpAngApplication {
     //TODO(MGA) : add spock tests
     //TODO(MGA) : more spring Bean
     //TODO(MGA) : security of http://localhost:4200/src/api/hikes.json
+    //TODO(MGA) : api/hikes and /hikes still exists !!! how about security ??
     //TODO(MGA) : jasmine
     //TODO(MGA) : CV(1) : Angular2/4 - GitHub - nodeJS ? - JQuery ? - Spring Boot - Spring Data Rest - test Ang - Spok
     //TODO(MGA) : CV(2) : JAVA8 - MongoDB - elasticSearch - Cloud - Docker - Rancher - AMS - Jenkins - Swagger - TypeScript
