@@ -10,7 +10,6 @@ import {HikeService} from "./hike.service";
 export class HikeDetailsComponent implements OnInit {
   id: number;
   hike: Hike;
-  name: string ="";
 
   errorMessage: string = "";
 
@@ -23,12 +22,10 @@ export class HikeDetailsComponent implements OnInit {
       this.id = this._activatedRouter.snapshot.params['id'];
       this._hikeService.getHikeFromId(this.id)
         .subscribe(hike => {
-            this.name = hike.name;
             this.hike = hike;
           },
            err => this.errorMessage = err
         );
       console.log("after reading hike form id ");
-    //TODO(MGA) : add err
   }
 }
