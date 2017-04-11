@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -29,4 +30,9 @@ public class HikeRestController {
     public ResponseEntity<?>  addHike(@RequestBody Hike hike){
         return  new ResponseEntity<>(hikeRepository.save(hike), HttpStatus.CREATED);
     }
-}
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public ResponseEntity<Hike> getHikeById(@PathVariable(value = "id") Long id) {
+        return new ResponseEntity<>(hikeRepository.findOne(id), HttpStatus.OK);
+    }
+ }

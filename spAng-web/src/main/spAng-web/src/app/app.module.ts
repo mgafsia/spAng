@@ -11,6 +11,7 @@ import {RouterModule} from "@angular/router";
 import {PageNotFound} from "../page-not-found";
 import {HomeComponent} from "../home/home.component";
 import {HomeModule} from "../home/home.module";
+import {HikeDetailsComponent} from "../hike/hike-details.component";
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {HomeModule} from "../home/home.module";
     RouterModule.forRoot([
       { path: 'home', component : HomeComponent},
       { path: 'hikes', component: HikeListComponent},
+      { path: "hikes/:id", component: HikeDetailsComponent},
       { path: '', component: HomeComponent},
       { path: '**', component: PageNotFound}
     ])

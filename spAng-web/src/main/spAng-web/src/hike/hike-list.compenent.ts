@@ -14,7 +14,6 @@ export class HikeListComponent implements OnInit {
 
   constructor(private _hikeService: HikeService) {
   }
-
   ngOnInit() {
     this._hikeService.getHikesFormApi()
       .subscribe(hikes => this.hikes = hikes,

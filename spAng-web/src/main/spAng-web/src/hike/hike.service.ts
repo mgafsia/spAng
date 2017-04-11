@@ -21,4 +21,11 @@ export class HikeService {
                       .map( hikes => hikes.json());
 
   }
+
+  public getHikeFromId(id: number) {
+    return this._http.get(this.url + '/' + id ) //TODO(MGA) : change this
+      .do(hike => console.log(id + '==>' + hike ))
+      .map(hike => hike.json());
+  }
+
 }
