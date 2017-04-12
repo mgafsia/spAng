@@ -24,13 +24,18 @@ public class SpAngApplication {
     //TODO(MGA) : add test for nG
     //TODO(MGA) : add spock tests
     //TODO(MGA) : more spring Bean
+    //TODO(MGA) : add flyway and test
     //TODO(MGA) : security of http://localhost:4200/src/api/hikes.json
     //TODO(MGA) : api/hikes and /hikes still exists !!! how about security ??
+    //TODO(MGA) : hikes: Hike[]; in HikeListComponent , why hike has not been initialised  and used directly this.hikes = hikes ?
     //TODO(MGA) : jasmine
     //TODO(MGA) : CV(1) : Angular2/4 - GitHub - nodeJS ? - JQuery ? - Spring Boot - Spring Data Rest - test Ang - Spok
     //TODO(MGA) : CV(2) : JAVA8 - MongoDB - elasticSearch - Cloud - Docker - Rancher - AMS - Jenkins - Swagger - TypeScript
-    //TODO(MGA) : CV(3) : SpringIoC
+    //TODO(MGA) : CV(3) : SpringIoC - flyway - bootstrap -
     //TODO(MGA) : CV(6) : REST : model / Repository /
+    //TODO(MGA) : change this : spring.datasource.url=jdbc:hsqldb:file:~/work/java/workspace/spAng/
+    //TODO(MGA) : add spock for java
+
 
     @Bean
     public Docket swaggerSettings() {
