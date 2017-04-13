@@ -1,0 +1,1 @@
+insert into HIKE (name, description) values ('FlyWayHike10', 'inserted by flyway script');
