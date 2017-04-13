@@ -16,11 +16,22 @@ public class SpAngApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpAngApplication.class, args);
 	}
-	//TODO(MGA) : add a mongoDB database
-	//TODO(MGA) : use swagger
-	//TODO(MGA) : add spring bean !!
-	//TODO(MGA) : add elastic search
-	//TODO(MGA) : add more hibernate
+
+    @Bean
+    public Docket swaggerSettings() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()
+                .apis(RequestHandlerSelectors.any())
+                .paths(PathSelectors.any())
+                .build()
+                .pathMapping("/");
+    }
+
+    //TODO(MGA) : add a mongoDB database
+    //TODO(MGA) : use swagger
+    //TODO(MGA) : add spring bean !!
+    //TODO(MGA) : add elastic search
+    //TODO(MGA) : add more hibernate
     //TODO(MGA) : add test for nG
     //TODO(MGA) : add spock tests
     //TODO(MGA) : more spring Bean
@@ -32,18 +43,9 @@ public class SpAngApplication {
     //TODO(MGA) : CV(1) : Angular2/4 - GitHub - nodeJS ? - JQuery ? - Spring Boot - Spring Data Rest - test Ang - Spok
     //TODO(MGA) : CV(2) : JAVA8 - MongoDB - elasticSearch - Cloud - Docker - Rancher - AMS - Jenkins - Swagger - TypeScript
     //TODO(MGA) : CV(3) : SpringIoC - flyway - bootstrap -
-    //TODO(MGA) : CV(6) : REST : model / Repository /
+    //TODO(MGA) : CV(6) : REST : model / Repository / Elastic Beanstalk(AWS)
     //TODO(MGA) : change this : spring.datasource.url=jdbc:hsqldb:file:~/work/java/workspace/spAng/
     //TODO(MGA) : add spock for java
+    //TODO(MGA) :
 
-
-    @Bean
-    public Docket swaggerSettings() {
-        return new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                .apis(RequestHandlerSelectors.any())
-                .paths(PathSelectors.any())
-                .build()
-                .pathMapping("/");
-    }
 }
