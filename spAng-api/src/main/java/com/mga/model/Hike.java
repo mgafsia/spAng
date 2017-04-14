@@ -1,5 +1,7 @@
 package com.mga.model;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
+@EnableAutoConfiguration  //TODO(MGA) : need this ?
 @Entity
 public class Hike {
 
@@ -67,6 +70,5 @@ public class Hike {
     public void setPerson(Person person) {
         this.person = person;
     }
-
     //TODO(MGA) : query : curl -X POST -H "Content-Type:application/json" -d '{ "name" : "ranOne", "length" : "1" }' localhost:8080/hikes
 }

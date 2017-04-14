@@ -4,4 +4,5 @@ export class Hike {
   description : string;
   length : number;
   evaluation : number[];
+  cssClass: string;
 }

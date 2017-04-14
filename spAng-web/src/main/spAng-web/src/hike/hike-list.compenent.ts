@@ -1,7 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {Hike} from "./Hike";
 import {HikeService} from "./hike.service";
-import {RouterLink} from "@angular/router";
 
 @Component({
   moduleId: module.id,
@@ -16,8 +15,18 @@ export class HikeListComponent implements OnInit {
   }
   ngOnInit() {
     this._hikeService.getHikesFormApi()
-      .subscribe(hikes => this.hikes = hikes,
+      .subscribe(hikes => {
+                            this.hikes = hikes;
+                            this.getCssRowClass(this.hikes);
+                          },
                  err => this.errorMessage = err);
+  }
+
+  getCssRowClass(hikes: Hike[]) {
+     for (let hike of hikes) {
+       if(hike.id % 2) hike.cssClass = "info";
+       else hike.cssClass = "warning";
+     }
   }
 }
 
