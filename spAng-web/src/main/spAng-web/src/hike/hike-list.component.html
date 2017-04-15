@@ -1,3 +1,22 @@
+
+<div class="container">
+  <h2></h2>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div id="imaginary_container">
+        <div class="input-group stylish-input-group">
+          <input type="text"  [(ngModel)]="searchTerm"  class="form-control"  placeholder="Search" >
+          <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <h2></h2>
   <table class="table">
@@ -9,7 +28,7 @@
     </tr>
     </thead>
     <tbody>
-      <tr style="height:20px;" *ngFor="let hike of hikes" class="{{hike.cssClass}}">
+      <tr style="height:20px;" *ngFor="let hike of hikes | hikeFilter: searchTerm" class="{{hike.cssClass}}">
         <td>{{hike.id}}</td>
         <td><a [routerLink]="['/hikes', hike.id]">{{hike.name}}</a> </td>
         <td>{{hike.description}}</td>
@@ -17,4 +36,5 @@
     </tbody>
   </table>
 </div>
+
 

@@ -10,6 +10,7 @@ import {HikeService} from "./hike.service";
 export class HikeListComponent implements OnInit {
   hikes: Hike[];
   errorMessage: string = "";
+  searchTerm: string;
 
   constructor(private _hikeService: HikeService) {
   }
