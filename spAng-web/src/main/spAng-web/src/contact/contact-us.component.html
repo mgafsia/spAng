@@ -1,0 +1,70 @@
+<form #mgaForm="ngForm"
+      (submit)="submitMyMessage(mgaForm)"
+      >
+  <div  class="form-group"
+        [class.has-error]="mgaNgSubject.invalid && mgaNgSubject.touched">
+    <label for="subject" class="control-label">Subject</label>
+    <input  type="text"
+            name="mgaSubject"
+            id="subject"
+            class="form-control"
+            placeholder="Title of subject"
+            required
+            [(ngModel)]="subject"
+            #mgaNgSubject="ngModel"
+
+    >
+   <!-- //TODO(MGA)P1: Chrome default required message  ? -->
+
+  </div>
+
+  <div class="form-group"
+       [class.has-error]="mgaNgMessage.invalid && mgaNgMessage.touched" >
+    <label for="message" class="control-label">Message</label>
+    <textarea  rows="3"
+            name="message"
+            id="message"
+            class="form-control"
+            required
+            [(ngModel)]="message"
+            #mgaNgMessage="ngModel"
+    >
+    </textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="service" class="control-label">Service</label>
+    <select id="service"
+            class="form-control"
+            name="name"
+            [(ngModel)]="service">
+        <option value="">---</option>
+        <option value="tech">Technique</option>
+        <option value="sales">Commercial</option>
+        <option value="guide">Guide moyenne montagne</option>
+    </select>
+  </div>
+  <button type="submit"
+          class="btn btn-primary"
+          [disabled]="mgaForm.invalid"
+          >Send</button>
+</form>
+<p>
+<div class="form-group">
+  <textarea rows="10"
+            class="form-control">
+    - mgaForm.valid ? : {{mgaForm.valid}}
+    - mgaSubject.valid ? : {{mgaNgSubject.valid}}
+    - mgaSubject.valid ? : {{mgaNgMessage.valid}}
+    =================
+    - subject = {{subject}}
+    - message = {{message}}
+    - service = {{service}}
+
+  </textarea>
+</div>
+
+
+
+
+

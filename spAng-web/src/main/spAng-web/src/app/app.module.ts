@@ -11,6 +11,8 @@ import {PageNotFound} from "../page-not-found";
 import {HomeComponent} from "../home/home.component";
 import {HomeModule} from "../home/home.module";
 import {HikeDetailsComponent} from "../hike/hike-details.component";
+import {ContactModule} from "../contact/contact.module";
+import {ContactUsComponent} from "../contact/contact-us.component";
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import {HikeDetailsComponent} from "../hike/hike-details.component";
     HttpModule,
     HikeModule,
     HomeModule,
+    ContactModule,
     RouterModule.forRoot([
       { path: 'home', component : HomeComponent},
       { path: 'hikes', component: HikeListComponent},
       { path: "hikes/:id", component: HikeDetailsComponent},
+      { path: "contact", component: ContactUsComponent},
       { path: '', component: HomeComponent},
       { path: '**', component: PageNotFound}
     ])

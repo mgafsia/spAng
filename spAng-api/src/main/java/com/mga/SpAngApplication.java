@@ -47,5 +47,5 @@ public class SpAngApplication {
     //TODO(MGA) : change this : spring.datasource.url=jdbc:hsqldb:file:~/work/java/workspace/spAng/
     //TODO(MGA) : add spock for java
     //TODO(MGA) : ccs_class varchar(255) by default - change this
-
+    //TODO(MGA) : bootstrap css is available only with internet connection !
 }
