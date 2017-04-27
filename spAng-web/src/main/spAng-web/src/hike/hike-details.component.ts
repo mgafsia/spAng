@@ -32,7 +32,7 @@ export class HikeDetailsComponent implements OnInit {
       console.log("after reading hike form id ");
   }
 
-  mgaGoBack() {
+   mgaGoBack() {
     console.log('go back to list <==');
     this._router.navigate(['/hikes']);
   }

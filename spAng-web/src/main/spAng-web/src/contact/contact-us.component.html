@@ -14,7 +14,8 @@
             #mgaNgSubject="ngModel"
 
     >
-   <!-- //TODO(MGA)P1: Chrome default required message  ? -->
+    <!-- //TODO(MGA)P1: Chrome default required message  ? -->
+    <div style="color:red" *ngIf="mgaNgSubject.invalid && mgaNgSubject.touched"><p>Message is missing</p></div>
 
   </div>
 
@@ -50,6 +51,8 @@
           >Send</button>
 </form>
 <p>
+
+<!-- //TODO(MGA) : delete this -->
 <div class="form-group">
   <textarea rows="10"
             class="form-control">
@@ -60,7 +63,6 @@
     - subject = {{subject}}
     - message = {{message}}
     - service = {{service}}
-
   </textarea>
 </div>
 

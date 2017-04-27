@@ -1,5 +1,6 @@
 import {Component} from "@angular/core";
 import {NgForm} from '@angular/forms';
+import {ContactService} from "./contact.service";
 
 @Component({
   moduleId: module.id,
@@ -8,11 +9,13 @@ import {NgForm} from '@angular/forms';
 })
 export class ContactUsComponent {
   service: string;
-  sujet: string;
+  subject: string;
   message: string;
 
+  constructor(private _contactService: ContactService) {
+  }
+
   submitMyMessage(mgaForm: NgForm) {
-    console.log(mgaForm);
-    //console.log(`name : ${mgaSubject}`);
+    this._contactService.sendSupportMessage(mgaForm.value);
   }
 }
