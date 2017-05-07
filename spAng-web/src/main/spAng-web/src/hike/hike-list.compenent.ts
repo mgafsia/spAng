@@ -1,5 +1,5 @@
-import {Component, OnInit} from "@angular/core";
 import {Hike} from "./Hike";
+import {Component, OnInit} from "@angular/core";
 import {HikeService} from "./hike.service";
 
 @Component({
