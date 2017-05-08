@@ -18,12 +18,8 @@
   </div>
 </div>
 
+<p></p>
 
-<div *ngFor="let hike of hikes" class="container">
-  <div class="panel-group">
-    <div class="panel panel-primary">
-      <div class="panel-heading">Panel with panel-primary class</div>
-      <div class="panel-body">Panel Content</div>
-    </div>
-  </div>
+<div *ngFor="let hike of hikes | hikeFilter: searchText" class="container">
+	<mga-sum [hike]="hike"></mga-sum>
 </div>

@@ -9,6 +9,7 @@ import {Component, OnInit} from "@angular/core";
 export class HikeSummaryListComponent implements OnInit {
   hikes: Hike[];
   errorMessage: String;
+  searchText: string;
   
   constructor(private _hikeService: HikeService) {    
   }
