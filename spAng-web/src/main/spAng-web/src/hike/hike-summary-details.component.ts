@@ -1,5 +1,7 @@
 import { Hike } from './Hike';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'mga-sum',
