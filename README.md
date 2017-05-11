@@ -1,7 +1,7 @@
 # spAng
 spAng for : SpringBoot & Angular.
 
-An api to develop a full stack api with spring boot and api. 
+An api to develop a full stack api with spring boot as REST api and angular/bootstrap front api. 
 
 
 
