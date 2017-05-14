@@ -14,4 +14,8 @@ export class HikeSummaryDetailsComponent implements OnInit {
     console.log("on start hike : " + this.hike);
     console.log("on start hike name : " + this.hike.description);
   }
+    
+  toggleAsToDoHike(isAdded: any) {
+      console.log(isAdded);
+  }    
 }

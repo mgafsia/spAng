@@ -1,7 +1,9 @@
  <div class="panel-group">
    <div class="panel panel-info">
      <div class="panel-heading">{{hike.name}}</div>
-     <div class="panel-body"><input type="checkbox"> {{hike.description}}     
+     <div class="panel-body">{{hike.description}}
+     	<br>
+     	<input type="checkbox" (change)="toggleAsToDoHike($event.target.checked)"> Add to todo list. 
      </div>     
    </div>   	   
  </div>
