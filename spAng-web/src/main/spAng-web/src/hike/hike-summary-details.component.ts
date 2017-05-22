@@ -17,6 +17,7 @@ export class HikeSummaryDetailsComponent implements OnInit {
 
   addHikeToToDoList(checked: any) {
     console.log(checked);
-    this.addToToDoListEvent.emit(this.hike);
+    if(checked)
+      this.addToToDoListEvent.emit(this.hike);
   }
 }
