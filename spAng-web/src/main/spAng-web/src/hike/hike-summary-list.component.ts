@@ -10,14 +10,18 @@ export class HikeSummaryListComponent implements OnInit {
   hikes: Hike[];
   errorMessage: String;
   //searchTemplate: string;
-  
-  constructor(private _hikeService: HikeService) {    
+
+  constructor(private _hikeService: HikeService) {
   }
-    
+
   ngOnInit() {
     this._hikeService.getHikesFormApi()
                     .subscribe(hikes => this.hikes = hikes,
                               err => this.errorMessage = err);
-        
-  }  
+
+  }
+
+  hikeToDoList(hike: Hike) {
+    console.log(hike.name + "will be added to todo list.")
+  }
 }

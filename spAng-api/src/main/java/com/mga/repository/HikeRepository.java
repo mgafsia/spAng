@@ -6,5 +6,5 @@ import com.mga.model.Hike;
 
 @RepositoryRestResource
 public interface HikeRepository extends CrudRepository<Hike, Long> {
-     //TODO(MGA) : add adequated method like findById
+     //TODO(MGA) : add adequate method like findById
 }

@@ -20,10 +20,10 @@
   </div>
 </div>
 
-<p></p> 
+<p></p>
 
 <div *ngFor="let hike of hikes | hikeFilter: searchTemplate" class="container">
-	<mga-sum [hike]="hike"></mga-sum>
+	<mga-sum [hike]="hike" (addToToDoListEvent)="hikeToDoList($event)"></mga-sum>
 </div>
 
 

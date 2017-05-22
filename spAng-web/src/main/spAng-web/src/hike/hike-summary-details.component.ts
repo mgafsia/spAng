@@ -1,6 +1,5 @@
 import { Hike } from './Hike';
-import { Component, Input, OnInit} from '@angular/core';
-import { NgForm } from '@angular/forms';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 
 @Component({
@@ -8,14 +7,16 @@ import { NgForm } from '@angular/forms';
   templateUrl: 'hike-summary-details.component.html'
 })
 export class HikeSummaryDetailsComponent implements OnInit {
-  @Input() hike: Hike;    
-  
+  @Input() hike: Hike;
+  @Output() addToToDoListEvent = new EventEmitter<Hike>();
+
   ngOnInit() {
     console.log("on start hike : " + this.hike);
     console.log("on start hike name : " + this.hike.description);
   }
-    
-  toggleAsToDoHike(isAdded: any) {
-      console.log(isAdded);
-  }    
+
+  addHikeToToDoList(checked: any) {
+    console.log(checked);
+    this.addToToDoListEvent.emit(this.hike);
+  }
 }
