@@ -28,6 +28,7 @@ import {HikeSummaryListComponent} from "../hike/hike-summary-list.component";
     HomeModule,
     ContactModule,
     RouterModule.forRoot([
+
       { path: 'home', component : HomeComponent},
       { path: 'hikes', component: HikeListComponent},
       { path: "hikes/:id", component: HikeDetailsComponent},

@@ -33,4 +33,20 @@ An api to develop a full stack api with spring boot as REST api and angular/boot
 
 - H2 data base
 
+# Useful commands :
+- mvn clean install (on parent) 
+
+- To add bootstrap to project add this entry on index.html file and add dist folder on src folder : 
+  <!-- Bootstrap core JavaScript
+      ================================================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="../dist/js/bootstrap.min.js"></script>
+  
+  
+- npm start (to start web server on angular project)
+
+
+ 
+ 
+
 
