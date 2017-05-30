@@ -12,10 +12,16 @@ export class MyObservableComponent {
     myObservable$: Observable<number>;
 
     createObservable() {
-      this.myObservable$ = Observable.from(this._intStream);
+      this.myObservable$ =  Observable.create((observer: any) => {
+        for(let i in this._intStream) {
+          observer.next(i);
+        }
+        observer.complete();
+      });
+
       this.myObservable$.subscribe(
-        val => console.log(`val is : ${val}`),
-        err => console.log(`err is : ${err}`),
+        val => console.log(`- val is : ${val}`),
+        err => console.log(`- err is : ${err}`),
         ()  => console.log(`end !`)
       );
     }
