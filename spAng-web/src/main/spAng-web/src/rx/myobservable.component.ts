@@ -13,9 +13,10 @@ export class MyObservableComponent {
 
     createObservable() {
       this.myObservable$ = Observable.from(this._intStream);
-      this.myObservable$.subscribe(new MyObservor());
-
+      this.myObservable$.subscribe(
+        val => console.log(`val is : ${val}`),
+        err => console.log(`err is : ${err}`),
+        ()  => console.log(`end !`)
+      );
     }
-
-
 }
