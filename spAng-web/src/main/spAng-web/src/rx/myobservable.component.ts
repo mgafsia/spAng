@@ -13,15 +13,18 @@ export class MyObservableComponent {
 
     createObservable() {
       this.myObservable$ =  Observable.create((observer: any) => {
-        for(let i in this._intStream) {
+        for(let i of this._intStream) {
           observer.next(i);
+          if(i > 3) {
+            observer.error("not allowed !!");
+          }
         }
         observer.complete();
       });
 
       this.myObservable$.subscribe(
         val => console.log(`- val is : ${val}`),
-        err => console.log(`- err is : ${err}`),
+        err => console.error(`- err is : ${err}`),
         ()  => console.log(`end !`)
       );
     }
