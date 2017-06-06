@@ -1,7 +1,4 @@
-import { Component } from '@angular/core';
-import {HikeService} from "../hike/hike.service";
-import {Hike} from "../hike/Hike";
-import {HikeListComponent} from "../hike/hike-list.compenent";
+import {Component} from "@angular/core";
 
 @Component({
   moduleId: module.id,
