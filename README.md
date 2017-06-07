@@ -3,6 +3,17 @@ spAng for SpringBoot & Angular.
 
 An api to develop a full stack api with spring boot as REST api and angular/bootstrap front api. 
 
+# How to install and run
+
+git clone https://github.com/mgafsia/spAng.git
+
+cd spang
+
+mvn clean install
+
+cd spAng\spAng-web\src\main\spAng-web
+
+npm start
 
 
 # Frameworks and technologies used :
