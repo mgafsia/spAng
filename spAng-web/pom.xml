@@ -60,7 +60,5 @@
 				<targetPath>static</targetPath>
 			</resource>
 		</resources>
-
 	</build>
-
 </project>

@@ -14,6 +14,7 @@ import {HikeDetailsComponent} from "../hike/hike-details.component";
 import {ContactModule} from "../contact/contact.module";
 import {ContactUsComponent} from "../contact/contact-us.component";
 import {HikeSummaryListComponent} from "../hike/hike-summary-list.component";
+import {MyObservableComponent} from "../rx/myobservable.component";
 
 @NgModule({
   declarations: [
@@ -31,9 +32,10 @@ import {HikeSummaryListComponent} from "../hike/hike-summary-list.component";
 
       { path: 'home', component : HomeComponent},
       { path: 'hikes', component: HikeListComponent},
-      { path: "hikes/:id", component: HikeDetailsComponent},
-      { path: "hikesSummary", component: HikeSummaryListComponent},
-      { path: "contact", component: ContactUsComponent},
+      { path: 'hikes/:id', component: HikeDetailsComponent},
+      { path: 'hikesSummary', component: HikeSummaryListComponent},
+      { path: 'contact', component: ContactUsComponent},
+      { path: 'rx', component: MyObservableComponent},
       { path: '', component: HomeComponent},
       { path: '**', component: PageNotFound}
     ])
