@@ -15,8 +15,8 @@ export class HikeSummaryListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this._hikeService.getHikesFormApi()
-                    .subscribe(hikes => this.hikes = hikes,
+    this._hikeService.getHikesFormJsonFile()
+                    .subscribe(hikes => { this.hikes = hikes ; console.log(this.hikes); },
                               err => this.errorMessage = err);
 
   }

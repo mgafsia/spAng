@@ -1,6 +1,5 @@
 import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
-import {HikeListComponent} from "./hike-list.compenent";
 import {HikeService} from "./hike.service";
 import {RouterModule, ActivatedRoute} from "@angular/router";
 import {HikeDetailsComponent} from "./hike-details.component";
@@ -16,8 +15,7 @@ import {HikeSummaryListComponent} from "./hike-summary-list.component";
               RouterModule,
               FormsModule
             ],
-  declarations : [HikeListComponent,
-                  HikeSummaryListComponent,
+  declarations : [HikeSummaryListComponent,
                   HikeSummaryDetailsComponent,
                   HikeDetailsComponent,
                   HikeFilterPipe],

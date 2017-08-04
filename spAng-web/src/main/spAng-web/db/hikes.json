@@ -1,74 +1,64 @@
-{
-  "_embedded": {
-  "hikes": [
-    {
-      "name": "FlyWayHike01",
-      "description": "First hike inserted by flyway script",
-      "length": 5,
-      "evaluation": null,
-      "person": null,
-      "_links": {
-        "self": {
-          "href": "http://localhost:8080/hikes/1"
-        },
-        "hike": {
-          "href": "http://localhost:8080/hikes/1"
+[
+      {
+        "name": "FlyWayHike01",
+        "description": "First hike inserted by flyway script",
+        "length": 5,
+        "evaluation": null,
+        "person": null,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/hikes/1"
+          },
+          "hike": {
+            "href": "http://localhost:8080/hikes/1"
+          }
+        }
+      },
+      {
+        "name": "FlyWayHike02",
+        "description": "Second hike inserted by flyway script",
+        "length": 9,
+        "evaluation": null,
+        "person": null,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/hikes/2"
+          },
+          "hike": {
+            "href": "http://localhost:8080/hikes/2"
+          }
+        }
+      },
+      {
+        "name": "FlyWayHike03",
+        "description": "Third hike inserted by flyway script",
+        "length": 2,
+        "evaluation": null,
+        "person": null,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/hikes/3"
+          },
+          "hike": {
+            "href": "http://localhost:8080/hikes/3"
+          }
+        }
+      },
+      {
+        "name": "FlyWayHike04",
+        "description": "Fourth hike inserted by flyway script",
+        "length": 5,
+        "evaluation": null,
+        "person": null,
+        "_links": {
+          "self": {
+            "href": "http://localhost:8080/hikes/4"
+          },
+          "hike": {
+            "href": "http://localhost:8080/hikes/4"
+          }
         }
       }
-    },
-    {
-      "name": "FlyWayHike02",
-      "description": "Second hike inserted by flyway script",
-      "length": 9,
-      "evaluation": null,
-      "person": null,
-      "_links": {
-        "self": {
-          "href": "http://localhost:8080/hikes/2"
-        },
-        "hike": {
-          "href": "http://localhost:8080/hikes/2"
-        }
-      }
-    },
-    {
-      "name": "FlyWayHike03",
-      "description": "Third hike inserted by flyway script",
-      "length": 2,
-      "evaluation": null,
-      "person": null,
-      "_links": {
-        "self": {
-          "href": "http://localhost:8080/hikes/3"
-        },
-        "hike": {
-          "href": "http://localhost:8080/hikes/3"
-        }
-      }
-    },
-    {
-      "name": "FlyWayHike04",
-      "description": "Fourth hike inserted by flyway script",
-      "length": 5,
-      "evaluation": null,
-      "person": null,
-      "_links": {
-        "self": {
-          "href": "http://localhost:8080/hikes/4"
-        },
-        "hike": {
-          "href": "http://localhost:8080/hikes/4"
-        }
-      }
-    }
-  ]
-},
-  "_links": {
-  "self": {
-    "href": "http://localhost:8080/hikes"
-  },
-  "profile": {
-    "href": "http://localhost:8080/profile/hikes"
-  }
-}
-}
+    ]
+
+
