@@ -18,22 +18,34 @@
       </div>
     </div>
   </div>
+  <br>
+  <div class="btn-group " data-toggle="buttons">
+    <label class="btn btn-primary active">
+      <input type="radio"
+             name="options"
+             id="option1"
+             autocomplete="off"
+             checked
+             (change)="changeDataSource()"
+      > From File
+    </label>
+    <label class="btn btn-primary">
+      <input type="radio"
+             name="options"
+             id="option2"
+             autocomplete="off"
+             (change)="changeDataSource()"
+      > From Server
+    </label>
+  </div>
 </div>
-
-<!--<div class="btn-group" data-toggle="buttons"   >-->
-  <!--<label class="btn btn-primary active">-->
-    <!--<input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)-->
-  <!--</label>-->
-  <!--<label class="btn btn-primary">-->
-    <!--<input type="radio" name="options" id="option2" autocomplete="off"> Radio 2-->
-  <!--</label>-->
-<!--</div>-->
-
 
 <p></p>
 
-<div *ngFor="let hike of hikes | hikeFilter: searchTemplate" class="container">
-	<mga-sum [hike]="hike" (addToToDoListEvent)="hikeToDoList($event)"></mga-sum>
+<div class="container">
+  <div *ngFor="let hike of hikes | hikeFilter: searchTemplate" >
+    <mga-sum [hike]="hike" (addToToDoListEvent)="hikeToDoList($event)"></mga-sum>
+  </div>
 </div>
 
 

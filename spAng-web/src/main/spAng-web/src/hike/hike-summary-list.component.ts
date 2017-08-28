@@ -24,4 +24,8 @@ export class HikeSummaryListComponent implements OnInit {
   hikeToDoList(hike: Hike) {
     console.log(hike.name + "will be added to todo list.")
   }
+
+  changeDataSource() {
+    console.log("Change the data source ...");
+  }
 }

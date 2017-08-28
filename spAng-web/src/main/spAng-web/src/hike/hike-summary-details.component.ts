@@ -20,4 +20,9 @@ export class HikeSummaryDetailsComponent implements OnInit {
     if(checked)
       this.addToToDoListEvent.emit(this.hike);
   }
+
+  changeDataSource() {
+    console.log("change data source ...");
+  }
+
 }
